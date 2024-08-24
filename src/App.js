@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
-
+import useState from 'react';
+import Header from './components/Header/Header';
+import './App.css'
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Project from './components/Project/Project';
+import Skills from './components/Skills/Skills';
 function App() {
+  // const [state,setState]=useState({
+  //   web3:null,
+  //   contract:null
+  // })
+  // const saveState=(state)=>{
+  //   console.log(state);
+  //   setState(state);
+  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header />
+    <Home />
+    <About />
+    <Skills />
+    <Project />
+    <Contact />
+    {/* <Wallet saveState={saveState}></Wallet>
+    <Hero state={state}/>
+    <Handles />
+    <Projects state={state} />
+    <Skills />
+    <Experience state={state} />
+    <Contact state={state} />
+    <Handles /> */}
+  </>
   );
 }
 
