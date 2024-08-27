@@ -248,3 +248,54 @@ section {
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container1 {
+        width: 100%;
+        padding: 20px;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .heading1 {
+        font-size: 6vw;
+        margin-bottom: 30px;
+    }
+
+    .bar {
+        font-size: 18px;
+    }
+
+    .Technical-bars .bar {
+        margin-top: 30px;
+    }
+
+    .Technical-bars .bar .info span {
+        font-size: 15px;
+    }
+
+    .radial-bars {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .radial-bars .radial-bar {
+        width: 80%;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .radial-bars .radial-bar svg {
+        width: 100px;
+        height: 130px;
+    }
+
+    .radial-bar .percentage {
+        font-size: 14px;
+    }
+
+    .radial-bar .test {
+        font-size: 14px;
+    }
+}

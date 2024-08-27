@@ -19,7 +19,7 @@ const About = () => {
           communication skills. Committed to delivering high-quality software
           solutions that meet client expectations
         </p>
-        <a href="#" className="btn">More About Me</a>
+        <a href="#skills" className="btn">More About Me</a>
       </div>
     </section>
   );

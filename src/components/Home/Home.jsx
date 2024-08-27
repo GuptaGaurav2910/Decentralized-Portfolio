@@ -29,12 +29,12 @@ const Home = () => {
           <h3>And I'm a <span className="text"></span></h3>
           <p>Developed decentralized apps in web3 space <br />and Full Stack Applications.</p>
           <div className="home-sic">
-            <a href="#" style={{ "--i": 6 }}><i className="fa-brands fa-linkedin fa-beat-fade"></i></a>
-            <a href="#" style={{ "--i": 7 }}><i className="fa-brands fa-github fa-beat-fade"></i></a>
-            <a href="#" style={{ "--i": 8 }}><i className="fa-brands fa-whatsapp fa-beat-fade"></i></a>
-            <a href="#" style={{ "--i": 9 }}><i className="fa-brands fa-twitter fa-beat-fade"></i></a>
+            <a href="https://www.linkedin.com/in/gaurav-g-8337b6234/" style={{ "--i": 6 }}><i className="fa-brands fa-linkedin fa-beat-fade"></i></a>
+            <a href="https://github.com/GuptaGaurav2910" style={{ "--i": 7 }}><i className="fa-brands fa-github fa-beat-fade"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=7733841942&text=%22Hello%20Gaurav!%20%F0%9F%8C%9F%20%20Thank%20you%20so%20much%20for%20taking%20the%20time%20to%20connect%20with%20me%20here.%20I%20really%20appreciate%20it!%20Looking%20forward%20to%20our%20conversation.%22" style={{ "--i": 8 }}><i className="fa-brands fa-whatsapp fa-beat-fade"></i></a>
+            <a href="https://x.com/gauravg10548425" style={{ "--i": 9 }}><i className="fa-brands fa-twitter fa-beat-fade"></i></a>
           </div>
-          <a href="#" className="btn">More About Me</a>
+          <a href="#about" className="btn">More About Me</a>
         </div>
         {/* <div className="home-img">
         <img src="/g1.jpg" alt="image" />

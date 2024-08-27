@@ -1,62 +1,110 @@
-
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background: #051129;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-}
-.logo{
-    position: relative;
-    font-size: 35px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    width: 50%;
-    cursor: default;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-}
-.navbar a{
-    display: inline-block;
-    font-size: 22px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-    animation-delay: calc(.2s * var(--i)); 
-}
-.navbar a:hover{
-    color: #0ef;
+/* Existing header styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #051129;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
 }
 
+.logo {
+  position: relative;
+  font-size: 35px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  width: 50%;
+  cursor: default;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: calc(.2s * var(--i)); 
+}
+
+.navbar a:hover {
+  color: #0ef;
+}
+
+/* Animations */
 @keyframes slideRight {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  
-  @keyframes slideTop {
-    from {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
-  
+}
+
+@keyframes slideTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+      padding: 10px 5%;
+      justify-content: space-between;
+  }
+
+  .logo {
+      font-size: 28px;
+      width: auto;
+  }
+
+  .navbar a {
+      font-size: 18px;
+      margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+      padding: 10px 2%;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .logo {
+      font-size: 24px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+
+  .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .navbar a {
+      font-size: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+}

@@ -109,3 +109,67 @@
     box-shadow: 0 0 5px cyan,
     0 0  25px cyan, 0 0 45px cyan;
 }
+
+.contact-text h4,
+.contact-text p,
+.contact-list,
+.contact-icons {
+    color: rgb(228, 228, 228);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .contact {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+        gap: 2rem;
+        padding-left: 20px;
+        margin-top: 80px;
+    }
+
+    .contact-text h2 {
+        font-size: 40px; /* Adjust font size for mobile */
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 20px; /* Reduce margin-bottom */
+    }
+
+    /* Hide all other elements except h2 and the contact form */
+    .contact-text h4,
+    .contact-text p,
+    .contact-list,
+    .contact-icons {
+        display: none; /* Hide on mobile */
+    }
+
+    .contact-form {
+        width: 100%; /* Ensure form takes full width on mobile */
+        padding: 0 10px; /* Add padding for better spacing on mobile */
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%; /* Full width on mobile */
+        padding: 15px; /* Adjust padding for mobile */
+        background: #555557;
+        color: #fff;
+        font-size: 16px; /* Adjust font size for mobile */
+        font-weight: 600;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .contact-form textarea {
+        height: 150px; /* Adjust textarea height for mobile */
+    }
+
+    .contact-form form .send {
+        display: inline-block;
+        padding: 12px 40px; /* Adjust padding for mobile */
+        font-size: 16px; /* Adjust font size for mobile */
+        margin-top: 10px;
+        opacity: 1; /* Ensure button is visible on mobile */
+        box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+    }
+}

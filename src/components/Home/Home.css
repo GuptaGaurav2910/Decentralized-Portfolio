@@ -1,19 +1,20 @@
 .home {
     position: relative;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     height: 100vh;
-    background: rgb(4, 4, 30);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     padding: 70px 10% 0;
+
 }
 .home-content {
-    max-width: 500px;
+    max-width: 700px;
     padding-top: 70px;
     margin-left: 0px;
+    text-align: center;
 }
 
 .home-content h3 {
@@ -24,6 +25,11 @@
     animation-delay: .7s;
 }
 
+.home-content h3,
+.home-content h1,
+.home-content p {
+    position: relative; /* Ensure elements are positioned relative to .home-content */
+}
 .home-content h1 {
     font-size: 50px;
     font-weight: 700;
@@ -141,6 +147,21 @@
     }
 }
 
+@media (max-width: 768px) {
+    .home-content h3 {
+        font-size: 6vw; /* Adjust font size for smaller screens */
+    }
 
+    .home-content h1 {
+        font-size: 8vw; /* Adjust font size for smaller screens */
+    }
 
+    .home-content p {
+        font-size: 3.5vw; /* Adjust font size for smaller screens */
+    }
 
+    .btn {
+        padding: 10px 20px;
+        font-size: 5vw; /* Adjust button font size for smaller screens */
+    }
+}

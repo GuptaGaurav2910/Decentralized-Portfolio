@@ -16,7 +16,7 @@ const Project = () => {
 of user-friendly interfaces. Implemented Firebase 
 databases for efficient data management.
               </p>
-              <a href="#" className="read">Read More</a>
+              <a href="https://github.com/GuptaGaurav2910/CampusConnect" className="read">Read More</a>
             </div>
             <div>
             <i className="fa-solid fa-cube" style={{ color: '#00eeff' }}></i>
@@ -26,7 +26,7 @@ databases for efficient data management.
 Technologies used: React Js, Firebase, Truffle, ganache, solidity
 Application for web3 secure transaction between wallets 
               </p>
-              <a href="#" className="read">Read More</a>
+              <a href="https://github.com/GuptaGaurav2910/Blocksafe-Banking" className="read">Read More</a>
             </div>
             <div>
             <i className="fa-solid fa-wallet" style={{ color: '#00eeff' }}></i>
@@ -34,7 +34,7 @@ Application for web3 secure transaction between wallets
               <p>
               Developed a decentralized application (DApp) for cryptocurrency staking, enabling users to securely stake their tokens and earn rewards through smart contracts. Utilized blockchain technology to ensure transparency, immutability, and efficiency in staking operations
               </p>
-              <a href="#" className="read">Read More</a>
+              <a href="https://github.com/GuptaGaurav2910/Stacking-Dapp" className="read">Read More</a>
             </div>
           </div>
         </div>
