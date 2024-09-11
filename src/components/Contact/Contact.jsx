@@ -2,6 +2,7 @@ import React from 'react';
 import './Contact.css';
 
 const Contact = () => {
+
   return (
     <section className="contact" id="contact">
       <div className="contact-text">
@@ -23,11 +24,11 @@ const Contact = () => {
       </div>
 
       <div className="contact-form">
-        <form action="">
+        <form onSubmit="">
           <input type="text" placeholder="Enter Your Name" required />
           <input type="email" placeholder="Enter Your Email" required />
           <input type="text" placeholder="Enter Your Subject" />
-          <textarea name="message" cols="40" rows="10" placeholder="Enter Your Message"></textarea>
+          <textarea name="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
           <input type="submit" value="Submit" className="send" />
         </form>
       </div>
