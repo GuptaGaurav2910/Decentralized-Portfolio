@@ -40,6 +40,9 @@
 .navbar a:hover {
   color: #0ef;
 }
+.header a:hover {
+  color: #0ef;
+}
 
 /* Animations */
 @keyframes slideRight {

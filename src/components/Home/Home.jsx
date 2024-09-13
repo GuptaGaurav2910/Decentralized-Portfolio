@@ -13,8 +13,6 @@ const Home = () => {
       backDelay: 1000,
       loop: true
     });
-
-    // Cleanup function to destroy Typed instance when the component unmounts
     return () => {
       typed.destroy();
     };
@@ -36,9 +34,6 @@ const Home = () => {
           </div>
           <a href="#about" className="btn">More About Me</a>
         </div>
-        {/* <div className="home-img">
-        <img src="/g1.jpg" alt="image" />
-      </div> */}
       </section>
     </div>
   );

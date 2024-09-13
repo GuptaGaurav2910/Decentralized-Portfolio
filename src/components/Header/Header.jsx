@@ -4,8 +4,7 @@ import './Header.css';
 const Header = () => {
   return (
     <header className="header">
-      <a href="#" className="logo">Portfolio</a>
-
+      <a onClick={() => window.location.reload()} className="logo">Portfolio</a>
       <nav className="navbar">
         <a href="#home" style={{ "--i": 1 }}>Home</a>
         <a href="#about" style={{ "--i": 2 }}>About</a>
